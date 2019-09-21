@@ -1,0 +1,31 @@
+INFO  2019-09-21 11:14:34,399 [Embedded] [event: ] org.mule.runtime.module.deployment.impl.internal.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New domain 'default'                                     +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2019-09-21 11:14:34,399 [Embedded] [event: ] org.mule.runtime.module.deployment.impl.internal.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing domain 'default'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2019-09-21 11:14:34,644 [Embedded] [event: ] org.mule.runtime.module.extension.internal.manager.DefaultExtensionManager: Registering extension mule (version: 4.1.4 vendor: MuleSoft, Inc. )
+INFO  2019-09-21 11:14:34,753 [Embedded] [event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2019-09-21 11:14:34,754 [Embedded] [event: ] org.mule.runtime.config.internal.MuleArtifactContext: Refreshing org.mule.runtime.config.internal.MuleArtifactContext: default (DOMAIN)
+INFO  2019-09-21 11:14:34,836 [Embedded] [event: ] org.mule.runtime.config.internal.processor.MuleInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2019-09-21 11:14:34,838 [Embedded] [event: ] org.mule.runtime.config.internal.ObjectProviderAwareBeanFactory: Overriding bean definition for bean '_muleConfiguration' with a different definition: replacing [Generic bean: class [org.mule.runtime.core.api.config.DefaultMuleConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.mule.runtime.config.internal.MuleConfigurationConfigurator]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+INFO  2019-09-21 11:14:35,641 [Embedded] [event: ] org.mule.runtime.api.el.AbstractBindingContextBuilderFactory: Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'java.net.URLClassLoader@208e9ef6'
+INFO  2019-09-21 11:14:35,679 [Embedded] [event: ] org.mule.runtime.core.internal.context.DefaultMuleContext: 
+**********************************************************************
+* Domain: default                                                    *
+* OS encoding: UTF-8, Mule encoding: UTF-8                           *
+*                                                                    *
+**********************************************************************
+INFO  2019-09-21 11:14:40,704 [Embedded] [event: ] org.mule.runtime.module.deployment.impl.internal.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping domain 'default'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2019-09-21 11:14:40,706 [Embedded] [event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2019-09-21 11:14:40,710 [Embedded] [event: ] org.mule.runtime.config.internal.MuleArtifactContext: Closing org.mule.runtime.config.internal.MuleArtifactContext: default (DOMAIN)
+INFO  2019-09-21 11:14:40,711 [Embedded] [event: ] org.mule.runtime.core.internal.context.DefaultMuleContext: 
+**********************************************************************
+* Domain "default" shut down normally on: 9/21/19 11:14 AM           *
+* Up for: 0 days, 0 hours, 0 mins, 5.44 sec                          *
+**********************************************************************
