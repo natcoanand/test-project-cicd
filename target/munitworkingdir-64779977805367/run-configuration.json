@@ -1,0 +1,60 @@
+{
+  "runToken": "b85a9e17-3608-44ca-96d7-297d878d48fc",
+  "projectName": "test-project",
+  "domainLocation": "",
+  "tags": [],
+  "testNames": [],
+  "suitePaths": [
+    "new-test-suite.xml"
+  ],
+  "allSuitePaths": [
+    "new-test-suite.xml"
+  ],
+  "skipAfterFailure": false,
+  "notifierConfigurations": [
+    {
+      "clazz": "org.mule.munit.remote.notifiers.ConsoleNotifier",
+      "parameters": [
+        {
+          "name": "runToken",
+          "type": "java.lang.String",
+          "value": "b85a9e17-3608-44ca-96d7-297d878d48fc"
+        }
+      ]
+    }
+  ],
+  "coverageConfiguration": {
+    "runCoverage": false,
+    "randomizeCoveragePort": true,
+    "suitePaths": [
+      "new-test-suite.xml"
+    ],
+    "ignoredFiles": [],
+    "ignoredFlowNames": []
+  },
+  "containerConfiguration": {
+    "runtimeId": "4.1.4",
+    "product": "MULE",
+    "munitWorkingDirectoryPath": "/Users/anand.s.uday.shankar/Desktop/Anypoint_Studio-Workspace/test-project/target/munitworkingdir-64779977805367",
+    "log4JConfigurationFilePath": "/Users/anand.s.uday.shankar/Desktop/Anypoint_Studio-Workspace/test-project/target/test-classes/log4j2-test.xml",
+    "mavenConfiguration": {
+      "settingsXmlFilePath": "/Applications/apache-maven-3.6.2/conf/settings.xml",
+      "globalSettingsXmlFilePath": "/Applications/apache-maven-3.6.2/conf/settings.xml",
+      "mavenRepositoryDirectoryPath": "/Users/anand.s.uday.shankar/.m2/repository",
+      "offlineMode": false,
+      "forcePolicyUpdate": true,
+      "ignoreArtifactDescriptorRepositories": false,
+      "remoteRepositories": [
+        {
+          "id": "mulesoft-releases",
+          "url": "https://repository.mulesoft.org/releases/"
+        },
+        {
+          "id": "central",
+          "url": "https://repo.maven.apache.org/maven2"
+        }
+      ]
+    },
+    "serverPluginConfigurations": []
+  }
+}
