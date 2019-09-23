@@ -2,20 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
-	<artifactId>test-project</artifactId>
+	<groupId>com.Mulesoft.training</groupId>
+	<artifactId>test-project-for-cicd</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
-	<name>test-project-cicd</name>
+	<name>test-project-for-cicd</name>
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
+		<username>anandmunich1</username>
+		<password>Mani123!!</password>
 		<app.runtime>4.1.4</app.runtime>
 		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
-	<munit.version>2.2.1</munit.version>
+		<munit.version>2.2.1</munit.version>
+
     </properties>
 
 	<build>
@@ -25,8 +27,25 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-				</configuration>
+			    <configuration>
+         <cloudHubDeployment>
+            <uri>https://anypoint.mulesoft.com</uri>
+            <muleVersion>${app.runtime}</muleVersion>
+            <username>${username}</username>
+            <password>${password}</password>
+            <applicationName>test-project-for-cicd</applicationName>
+            <environment>Sandbox</environment>
+        </cloudHubDeployment>
+    </configuration> 
+				  <executions>
+        				<execution>
+            				<id>deploy</id>
+            				<phase>deploy</phase>
+            				<goals>
+                				<goal>deploy</goal>
+            				</goals>
+        				</execution>
+   			 	</executions>
 			</plugin>
 		<plugin>
                 <groupId>com.mulesoft.munit.tools</groupId>
@@ -53,6 +72,8 @@
             </plugin>
         </plugins>
 	</build>
+	
+
 
 	<dependencies>
         <dependency>
@@ -82,7 +103,7 @@
         </dependency>
     </dependencies>
 
-	<repositories>
+	<!--  <repositories>
           <repository>
             <id>anypoint-exchange</id>
             <name>Anypoint Exchange</name>
@@ -95,17 +116,25 @@
             <url>https://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
         </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>mulesoft-releases</id>
-            <name>mulesoft release repository</name>
-            <layout>default</layout>
-            <url>https://repository.mulesoft.org/releases/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
+        <repository>
+        <id>mulesoft-public</id>
+        <name>MuleSoft Public Repository</name>
+        <url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+        <layout>default</layout>
+    </repository>
+    <repository>
+        <id>mulesoft-snapshots</id>
+        <name>MuleSoft Snapshot Repository</name>
+        <url>http://repository.mulesoft.org/snapshots/</url>
+        <layout>default</layout>
+    </repository>
+    </repositories> -->
+    
+<pluginRepositories>
+    <pluginRepository>
+        <id>mule-public</id>
+        <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+    </pluginRepository>
+</pluginRepositories>
 
 </project>
